@@ -61,6 +61,10 @@ a, a:visited, a:link {
   color: #ccc;
 }
 
+.image {
+  text-align: center;
+}  
+
 a:hover, a:active {
   color: #fff;
 }
