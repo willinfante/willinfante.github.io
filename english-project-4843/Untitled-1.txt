@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            overflow: hidden;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+        }
+
+        .media {
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="media">
+        <div id="1">
+            <img src="mental-health_0.jpg" style="position: fixed; left: 60vw; top: 30vh; width: 30vw;">
+            <img src="classic.jpg" style="position: fixed; left: 10vw; top: 35vh; width: 45vw;">
+
+            <div style="text-align: center; max-width: 100vw; padding: 25px; font-size: 2.5vw;">
+                <b>Movies, Values, and Mental Health</b> <br>
+
+                In this project I will exploring two movies: Casablanca and It's a Wonderful Life. I will be looking at
+                how
+                these movies promote positive values and thinking, and how changes in these could have pereptuated the
+                current
+                mental health crisis.
+            </div>
+        </div>
+        <div id='2' style="position: fixed; left: 45%; top: 4%;">
+            <img src="MMPI_scale.png" style="width:47vw;">
+            <div style="position:fixed; left: 0; top: 3vh; max-width: 42vw; padding: 25px; font-size: 1.2vw;">
+
+                Mental health problems considerably worse than decades ago... <BR><BR>
+                • Typical schoolchildren in 1980s reported more anxiety than 1950s psychiatric patients (Twenge
+                2000) <BR>
+                • Rates of depression, anxiety, and lonliness have risen (Doucleff 2023) <BR>
+                • Today is know as the 'Age of anxiety' (Twenge 2000) <BR>
+                • 'During the study period, social connectedness decreased because of higher divorce rates, more people\
+                living alone and a decline in trust in other people. The author says many of these changes involve
+                greater individualism...' (APA 2000) <BR><BR>
+                • Casablanca teaches us to not be individualistic. Rick went from saying, 'I stick my neck out for
+                nobody' to helping the French Resistance. <BR><BR>
+                • It's a Wonderful Life emphasizes how we can impact others lives in a positive way (not just our own).
+                The movie emphasizes friendship and community. <BR>
+                • Clarence's final message is about friendship: 'Remember no man is a failure who has friends.' "
+            </div>
+
+        </div>
+        <video id='3'>
+            <source src="casablanca/casablanca_intro.mp4" type="video/mp4">
+            <div style="position:fixed; left: 0; bottom: 3vh; max-width: 42vw; padding: 25px; font-size: 1.2vw;">
+                <b> Casablanca (1942), featuring Humphrey Bogart as Rick Blaine.<b>
+            </div>
+        </video>
+        <div id='4' style="position: fixed; left: 45%; top: 4%; text-align: left;">
+        </div>
+        <video id='5'>
+            <source src="casablanca/im_sorry.mp4" type="video/mp4">
+        </video>
+        <video id='6'>
+            <source src="casablanca/all_the_gin_joint.mp4" type="video/mp4">
+        </video>
+        <video id='7'>
+            <source src="casablanca/paris_rain.mp4" type="video/mp4">
+        </video>
+        <video id='8'>
+            <source src="casablanca/the_end.mp4" type="video/mp4">
+        </video>
+
+        <div id='9'>
+            <div style="position: fixed; left: 0; top: 3vh; max-width: 45vw; padding: 25px; font-size: 1.2vw;">
+                <b>New Media (TikTok, etc.) vs Old Media (Casablanca)</b> <br><br><br>
+
+                Movies were the 'TikTok' of the day; new media emphasizes perfection: <br><br>
+                &nbsp&nbsp&nbsp• Many popular 'influencers' use filters and only show the good parts of their lives,
+                giving us unrealistic expectations<br>
+                &nbsp&nbsp&nbsp• Lots of social media emphasizes how you have to do x (fill in the blank: be rich, look
+                perfect, etc.) to be ok.<br>
+                <img src="perfect.jpg" style="width:30vw; padding: 4vw;">
+            </div>
+            <div style="position: fixed; right: 0; bottom: 10vh; max-width: 50vw; padding: 25px; font-size: 1.2vw;">
+                <img src="imperfect.jpg" style="width:30vw; right: 2vw; padding: 4vw; top: 3vw;"> <br> <br>
+                Casablanca emphasizes the imperfections & realities of life: &nbsp&nbsp&nbsp <br> <br>
+                • &nbsp&nbsp&nbsp &nbsp&nbsp&nbsp You will not always be perfectly happy and things won't always work
+                out! &nbsp&nbsp&nbsp <br>
+                • &nbsp&nbsp&nbsp &nbsp&nbsp&nbsp Most of these clips are exposing this idea to the viewers...
+                &nbsp&nbsp&nbsp <br>
+                • &nbsp&nbsp&nbsp &nbsp&nbsp&nbsp Rick lost his lover, but he was ok (he made a new friend!) <br>
+                • &nbsp&nbsp&nbsp &nbsp&nbsp&nbsp' Social comparison driven by social media is associated with body
+                dissatisfaction, disordered
+                eating, and depressive symptoms' (US Surgean General Advisory, 2023) <br> <br>'But let every person
+                prove their own work, and then he can take pride in himself alone, without
+                comparing himself to someone else.' - Gal. 6:4"
+            </div>
+        </div>
+
+        <video id='10'>
+            <source src="wonderfullife/intro.mp4" type="video/mp4">
+            <div style="text-align: center; max-width: 100vw; padding: 25px; font-size: 2.5vw;">
+                <b>It's a Wonderful Life</b>
+                This next film was released in 1946, starring Jimmy Stewart as George Bailey. The movie starts with a
+                flash-forward of everyone praying for George. It then goes to the perspective of God showing one of his
+                angels (Clarence) through George's life, as George was considering 'giving up God's greatest gift'. The
+                movie starts at a young age and goes all the way up to the night of when he was going through trouble,
+                and teaching many lessons along the way. "
+            </div>
+        </video>
+        <video id='11'>
+            <source src="wonderfullife/ear.mp4" type="video/mp4">
+            <div style="text-align: center; max-width: 100vw; padding: 25px; font-size: 2.5vw;">
+                <b>George's Ear</b>
+
+                Early on in the film, George lost his hearing from jumping in icey water to save his brother from dying.
+                This scene represents a positive play on his issue, rather than viewing it in a bad light, we see him
+                living
+                a happy life. Not included in this is him talking about how he wanted to do great things and explore.
+                This
+                will be one of his biggest troubles in life as he is not able to meet the expectations he set for
+                himself. "
+            </div>
+        </video>
+        <video id='12'>
+            <source src="wonderfullife/dad_knows.mp4" type="video/mp4">
+            <div style="text-align: center; max-width: 100vw; padding: 25px; font-size: 2.5vw;">
+                <b id="mainTitle">Movies, Values, and Mental Health</b>
+                <div id="mainText">
+                    In this project I will exploring two movies: Casablanca and It's a Wonderful Life. I will be looking
+                    at
+                    how
+                    these movies promote positive values and thinking, and how changes in these could have pereptuated
+                    the
+                    current
+                    mental health crisis.
+                </div>
+            </div>
+        </video>
+        <video id='13'>
+            <source src="wonderfullife/pool.mp4" type="video/mp4">
+        </video>
+        <video id='14'>
+            <source src="wonderfullife/bank_run.mp4" type="video/mp4">
+        </video>
+        <video id='15'>
+            <source src="wonderfullife/more_dead_than_alive.mp4" type="video/mp4">
+        </video>
+        <video id='16'>
+            <source src="wonderfullife/angel.mp4" type="video/mp4">
+        </video>
+        <video id='17'>
+            <source src="wonderfullife/bailey_park.mp4" type="video/mp4">
+        </video>
+        <video id='18'>
+            <source src="wonderfullife/ending.mp4" type="video/mp4">
+        </video>
+
+        <div id='19' style="position: fixed; left: 45%; top: 10%;">
+            <img src="clarence_letter.jpg" style="width:50vw;">
+        </div>
+
+        <div id='20' style="position: fixed; left: 45%; top: 4%;">
+            <img src="role-religion.png" style="width:50vw;">
+        </div>
+
+        <div id='21' style="position: fixed; left: 45%; top: 4%; text-align: left;"></div>
+
+    </div>
+
+    <!-- Fixed text box for each slide! -->
+    <div id="textBox" style="text-align: center; max-width: 100vw; padding: 25px; font-size: 2.5vw;">
+        <b id="mainTitle"></b>
+        <div id="mainText"
+        </div>
+    </div>
+
+    <!-- control panel arrow keys -->
+    <div id="control"
+        style="display: flex; position: fixed; right:15px; bottom:15px; flex: 1; flex-direction: row; align-items: center; gap: 10px;">
+        <div style="min-width:150px; font-size: 2.5vw;">
+            <div>Use Arrow Keys</div>
+            <div>to Scroll</div>
+        </div>
+
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+            style="width: 90px;">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+        </svg>
+
+    </div>
+
+
+
+
+</body>
+<script>
+
+    var media = {
+        1: 'text',
+        2: 'video',
+        3: 'video',
+        4: 'video',
+        5: 'video',
+        6: 'video',
+        7: 'video',
+        8: 'video',
+        9: 'video',
+        10: 'video',
+        11: 'video',
+        12: 'video',
+        13: 'video',
+        14: 'video',
+        15: 'video',
+        16: 'image',
+        17: 'image',
+        18: 'image',
+        19: 'text',
+        20: 'text'
+    }
+    var titles = {
+        '1': {
+            title: "",
+            text: ""
+        },
+        '2': {
+            title: "",
+            title: ""
+        },
+
+        '3': {
+            title: "",
+            text: ""
+        },
+        '4': {
+            title: "Casablanca (1942) \n \n",
+            text: "Taking place and being filmed during the Second World War, this film captures the life of Rick Blaine, a cynical refugee from France, who owns \
+            a cafe in Casablanca, Morroco. He is very neutral about the war and has not interest in being apart of the resistance. He is famous for saying, \
+            'I stick my neck out for nobody'. Shortly into the movie he reunites with his lover (who is married to a member of the resistance) whom abandoned \
+            him in Paris, and the reason for his cynicality. Rick soon has to decide whether to escape with her to America, or to let her go with her husband \
+            who by leaving will help the Allies win the war. Ultimately, as we will see, he does the right thing for society and lets go of his selfishness."
+        },
+        '5': {
+            title: "I'm Sorry Sir...",
+            text: "In this scene early in the movie, Rick, the owner of the cafe is chatting with Louis, when one of his workers comes up to him explaining how \
+            he lost 20,000 francs running the casino. Rather than responding with rage, Rick responds with acceptance and care. This kind of positivity shows us \
+            that mistakes are ok."
+        },
+        '6': {
+            title: "Of all the gin joints in the world...",
+            text: "Here, we see negativity. After seeing his lover arrive to his cafe with her husband, Rick is depressed. This kind of negativity resets \
+            peoples expectations of life, making them feel that it is ok for things to not work out."
+        },
+        '7': {
+            title: "Paris - 1939",
+            text: "Here we get a flashback to the occupation of Paris. Rick and Ilsa were lovers in the days prior to this, and she had promised to meet him at the \
+            train. He is let down. This again shows the viewers that things don't always work out, keeping their expectations on life lower, and seeing more positivity\
+             in what happens. "
+        },
+        '8': {
+            title: "Here's to looking at you, kid",
+            text: "Lastly, we see Rick send of Ilsa with her husband. Rick recognizes that this was the right thing to do. Rick then heroically stopped the General from calling the plane back. Louis then tells his officers to 'round up the usual suspects', saving Rick. This helps to teach the viewer that doing the right thing will cause things to work out fine. Famously at the end Rick tells Louis how they were going to end up with 'a wonderful friendship'. This demonstrates to the viewer that while Rick didn't exactly get what he wanted, all is not lost as he has other people in his life.  "
+        },
+
+        '9': {
+            title: "",
+            text: ""
+        },
+        '10': {
+            title: "",
+            text: ""
+        },
+        '11': {
+            title: "",
+            text: ""
+        },
+        '12': {
+            title: "George Meets Mr. Potter",
+            text: "Here, we meet Mr. Potter, described as 'the richest and meanest man in town' by God in the film (God narrates parts of the film before it enters the present day). Potter is insulting George's Dad, and George fights back as soon as he sees this. He battles negativity with positivity, which inspires us to do the same in our lives."
+        },
+        '13': {
+            title: "High School Reunion",
+            text: "After George meets his future wife, Mary, at a high school reunion, they immediately fall in love and dance with eachother. Since Mary had gone there with another date, the other date was jealous of George. He and a friend end up opening the swimming pool to get their revenge. However, this only adds more excitment to Mary and Georges early relationship, as they smile and dance even after falling into the pool. Along with this, others including the perpetrators get in on the positivity and jump in the pool. In this case, something that was intended to be malicous ended up being a very happy thing for all involved. It wasn't seen as a catastrophy, everyone was jumping in! This kind of scene promotes that kind of 'seeing the positive in the negative' kind of thinking. Not included, Georges father dies the same night, which ultimately forces George to take over as president of their bank (The Bailey Building and Loan) rather than go off to travel and then go to college. George never was able to travel and do those things he wanted, leading to discontentment. "
+        },
+        '14': {
+            title: "The Bank Run",
+            text: "After getting married, George and his wife are about to head on their honeymoon. However, the Great Depression had hit their town, Bedford Falls, and George's bank (The Bailey Building and Loan) was under distress. Giving up their fancy honeymoon, they put up their personal funds to help save the depositors of the bank. They end up having their honeymoon in an old rickety house that was fixed up by the people in town who saw him as a hero. Another one of the 'seeing the positive in the negative'. George is the only one seen as somewhat cynical, while everyone else remains somewhat hopeful about the situaiton (his wife and the two guys helping set up the house) "
+        },
+        '15': {
+            title: "Uncle Billy Loses the Bank's Money",
+            text: "After Uncle Billy loses the banks money on Christmas Eve, George goes to his rival Mr. Potter to try and get money to save his bank. Potter declares George as 'worth more dead than alive', leading into the next scene. "
+        },
+        '16': {
+            title: "Clarence, ASII",
+            text: "George is about to commit suicide, when his Guardian Angel comes down to earth and saves him by jumping in the water. This scene shows the audience that there is hope in every situation."
+        },
+        '17': {
+            title: "Bailey Park",
+            text: "After asking the angel to show him what it would be like if he is never born, George is granted his wish. Bedford falls becomes Potterville, and looks life 'sin city'."
+        },
+        '18': {
+            title: "George Learns his Lesson",
+            text: "George learns of how much of a positive impact he had on the lives of many others, after seeing how horrible everyone would be without him. George learns to appreciate the things he had from his experience, as returns to his previous life. The lesson here is to be grateful for what we have, a far cry from what is shown in more modern movies.' "
+        },
+        '19': {
+            title: "Clarences letter",
+            text: "In a final note from Clarence, George gets a message, 'Remember no man is a failure who has friends."
+        },
+        // caveat of trend continuning *****not today
+
+        '20': {
+            title: "Decreased importance of religion in Americans lives \n\n",
+            text: "• These older movies have more religious references \n \
+                   • Casablanca: Isla says 'God bless you' to Rick multiple times in the movie (not as prominent as in the other movie but nevertheless more present than in new movies). \n \n\
+                   • It's a Wonderful Life is full of religous references: the whole movie is God showing Clarence (George's Guardian Angel) George's whole life so that he could help him.\n\n\
+                   • One argument has been that this decreased role in religion could be contributing to the mental health crisis (less life purpose, more focus on materialism, etc.)\n\
+                   • '...materialism tends to be associated with treating others in more competitive, manipulative and selfish ways, as well as with being less empathetic\
+                    ... [M]aterialism is associated with lower levels of well-being, less pro-social interpersonal behavior, more ecologically destructive behavior, \
+                    and worse academic outcomes. It also is associated with more spending problems and debt ... We found that the more highly people endorsed materialistic\
+                     values, the more they experienced unpleasant emotions, depression and anxiety, the more they reported physical health problems, such as stomachaches \
+                     and headaches, and the less they experienced pleasant emotions and felt satisfied with their lives.' (Kasser 2014)"
+        },
+
+        '21': {
+            title: "Final Note",
+            text: "Americas changing values, pereptuated by the media, are playing into the mental health crisis."
+        }
+    }
+
+
+    /**
+     * 
+     * 
+                      \xa0\xa0\xa0• George Bailey didn't go exploring like he planned to, but he was ok.\n\
+                   \xa0\xa0\xa0• George Bailey didn't have any money when he came back from 'his wish', but he was ok.\n\
+                   \xa0\xa0\xa0• George Bailey was deaf in one ear, but he was ok.\n\
+     * 
+     * */
+    var w_max = 19 + 1
+
+    // Disable all movies
+    for (i = 2; i <= 21; i++) {
+        document.getElementById(i).style.display = 'none';
+    }
+    var i = 1;
+
+    function updateVideoDesc(currIndex) {
+
+        document.getElementById('mainTitle').innerText = titles[currIndex].title;
+        document.getElementById('mainText').innerText = titles[currIndex].text;
+
+    }
+
+    document.onkeydown = checkKey;
+
+    function changeUp(currIndex) {
+
+        console.log(currIndex);
+
+        let prevIndex = currIndex - 1; // Previous video index number
+
+        if (prevIndex <= 1) {
+            document.getElementById(prevIndex).style.display = 'none';
+            // Play 1st video
+            document.getElementById(currIndex).style.display = 'block';
+
+            // Turn off 'Use Arrow Keys to Scroll >' Dialogue
+            document.getElementById('control').style.display = 'none';
+
+            if (currIndex == 2) {
+                document.getElementById('textBox').style.top = '3vh';
+                document.getElementById('textBox').style.bottom = '';
+            } else {
+                document.getElementById('textBox').style.top = '';
+                document.getElementById('textBox').style.bottom = '3vh';
+            }
+            document.getElementById('textBox').style = "position: fixed; left: 0; bottom: 3vh; max-width: 42vw; padding: 25px; font-size: 1.2vw;";
+
+        } else {
+
+            // Disable previous video
+            document.getElementById(prevIndex).style.display = 'none';
+            try {
+                document.getElementById(prevIndex).pause();
+            }
+            catch (err) {
+                console.log('not playing video');
+            }
+
+            // Enable next view
+            document.getElementById(currIndex).style.display = '';
+            try {
+                document.getElementById(currIndex).play();
+            }
+            catch (err) {
+                console.log('not playing video');
+            }
+
+            // Set size of text
+
+            if (currIndex == 4 || currIndex == 1) {
+                document.getElementById('textBox').style = "text-align: center; max-width: 100vw; padding: 25px; font-size: 2.5vw;";
+            } else {
+                document.getElementById('textBox').style = "position: fixed; left: 0; bottom: 3vh; max-width: 42vw; padding: 25px; font-size: 1.2vw;";
+            }
+
+            //Set location of text
+            if (currIndex == 17 || currIndex == 18 || currIndex == 19 || currIndex == 20) {
+                document.getElementById('textBox').style.top = '3vh';
+                document.getElementById('textBox').style.bottom = '';
+            } else {
+                document.getElementById('textBox').style.top = '';
+                document.getElementById('textBox').style.bottom = '3vh';
+            }
+            if (currIndex == 9 || currIndex == 2) {
+                document.getElementById('textBox').style.top = '3vh';
+                document.getElementById('textBox').style.bottom = '';
+            } else {
+                document.getElementById('textBox').style.top = '';
+                document.getElementById('textBox').style.bottom = '3vh';
+            }
+
+        }
+
+        updateVideoDesc(currIndex);
+    }
+
+    function changeDown(currIndex) {
+
+        let prevIndex = currIndex + 1;
+
+        // Disable previous slide
+        document.getElementById(prevIndex).style.display = 'none';
+        try {
+            document.getElementById(prevIndex).pause();
+        }
+        catch (err) {
+            console.log('**cannot pause previous; not a video');
+            console.log('****PREVIOUS INDEX: ' + prevIndex + ' ***********')
+        }
+
+        // Turn on video lower in the index
+        document.getElementById(currIndex).style.display = '';
+        try {
+            document.getElementById(currIndex).play();
+        }
+        catch (err) {
+            console.log('not playing video');
+        }
+
+        if (currIndex == 1) {
+            document.getElementById('control').style.display = 'flex';
+        }
+
+        if (currIndex == 4 || currIndex == 1) {
+            document.getElementById('textBox').style = "text-align: center; max-width: 100vw; padding: 25px; font-size: 2.5vw;";
+        } else {
+            document.getElementById('textBox').style = "position: fixed; left: 0; bottom: 3vh; max-width: 42vw; padding: 25px; font-size: 1.2vw;";
+        }
+
+        if (currIndex == 2 || currIndex == 17 || currIndex == 18 || currIndex == 19 || currIndex == 20) {
+            document.getElementById('textBox').style.top = '3vh';
+            document.getElementById('textBox').style.bottom = '';
+        } else {
+            document.getElementById('textBox').style.top = '';
+            document.getElementById('textBox').style.bottom = '3vh';
+        }
+        if (currIndex == 9 || currIndex == 2) {
+            document.getElementById('textBox').style.top = '3vh';
+            document.getElementById('textBox').style.bottom = '';
+        } else {
+            document.getElementById('textBox').style.top = '';
+            document.getElementById('textBox').style.bottom = '3vh';
+        }
+        updateVideoDesc(currIndex);
+    }
+
+
+    function checkKey(e) {
+
+        e = e || window.event;
+
+        if (e.keyCode == '37') {
+            // left arrow
+            if (i > 1) {
+                i--;
+                changeDown(i);
+            }
+        }
+        else if (e.keyCode == '39') {
+            // right arrow
+            if (i < 20) {
+                i++;
+                changeUp(i);
+
+            }
+        }
+    }
+</script>
+
+</html>
