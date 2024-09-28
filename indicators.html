@@ -39,10 +39,10 @@
         <a href="/contact.html" class="nav-link">Contact</a>
       </nav>
     </header>
-    <main class="mb-auto mt-4 pb-4 d-flex justify-content-center">
+    <!--<main class="mb-auto mt-4 pb-4 d-flex justify-content-center">
       
 
-    </main>
+    </main>--->
     <div id="chart"></div>
     <div id="crack"></div>
 
@@ -63,7 +63,6 @@
     //var range = max - min
     console.log(data_s);
 
-    console.log(data_s[0])
     var options = {
       series: [{
         name: 'Heavy Truck Sales',
@@ -75,7 +74,6 @@
         type: 'area',
         foreColor: "#000000",
         background: '#FFFFFF',
-        colors: ["#156082"],
         stacked: false,
         height: 400,
         width: 800,
@@ -100,8 +98,8 @@
         align: 'left'
       },
       fill: {
-        type: 'solid',
-        colors: ['transparent']
+        type: 'gradient',
+        colors: ["#156082"]
       },
       yaxis: {
         labels: {
@@ -116,7 +114,7 @@
       },
       xaxis: {
         type: 'datetime'
-       // range: range
+        // range: range
       },
       tooltip: {
         shared: false,
@@ -134,13 +132,9 @@
   });
 
   d3.csv("/data/HOCRACK.csv", function (data_s) {
-    //var max = new Date().getTime() // Current timestamp
-    //var min = new Date("2019-09-16").getTime() // timestamp 90 days before
 
-    //var range = max - min
     console.log(data_s);
 
-    console.log(data_s[0])
     var options = {
       series: [{
         name: 'HO-WTI Crack ($/bbl)',
@@ -192,7 +186,7 @@
       },
       xaxis: {
         type: 'datetime'
-       // range: range
+        // range: range
       },
       tooltip: {
         shared: false,
@@ -208,6 +202,8 @@
     var chart = new ApexCharts(document.querySelector("#crack"), options);
     chart.render();
   });
+
+
 </script>
 
 </html>
