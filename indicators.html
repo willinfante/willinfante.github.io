@@ -66,6 +66,11 @@
   var min = new Date("2022-01-01").getTime() // timestamp 90 days before
 
   var range_1 = max - min
+
+  var max = new Date("2024-04-01").getTime()
+  var min = new Date("2022-01-01").getTime() // timestamp 90 days before
+
+  var range_uneml = max - min
   d3.csv("/data/HTRUCKSS.csv", function (data_s) {
 
     console.log(data_s);
@@ -265,7 +270,7 @@
       },
       xaxis: {
         type: 'datetime',
-        range: range
+        range: range_uneml
       },
       tooltip: {
         shared: false,
