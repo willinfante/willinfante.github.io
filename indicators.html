@@ -56,80 +56,81 @@
 
 
 <script>
-  d3.csv("/data/HTRUCKSS.csv", function (data) {
-    console.log(data);
-  });
+  d3.csv("/data/HTRUCKSS.csv", function (data_s) {
 
-  var options = {
-    series: [{
-      name: 'XYZ MOTORS',
-      data: data_s
-    }],
-    chart: {
-      type: 'area',
-      foreColor: "#FFFFFF",
+    console.log(data_s);
 
-      stacked: false,
-      height: 650,
-      width: 1590,
-      zoom: {
-        type: 'x',
-        enabled: true,
-        autoScaleYaxis: true
+    console.log(data_s[0])
+    var options = {
+      series: [{
+        name: 'XYZ MOTORS',
+        data: data_s
+      }],
+      chart: {
+        type: 'area',
+        foreColor: "#FFFFFF",
+
+        stacked: false,
+        height: 650,
+        width: 1590,
+        zoom: {
+          type: 'x',
+          enabled: true,
+          autoScaleYaxis: true
+        },
+        toolbar: {
+          autoSelected: 'zoom'
+        }
       },
-      toolbar: {
-        autoSelected: 'zoom'
-      }
-    },
 
-    dataLabels: {
-      enabled: false,
-    },
-    markers: {
-      size: 0,
-    },
-    title: {
-      text: titl,
-      align: 'left'
-    },
-    fill: {
-      type: 'gradient',
-      gradient: {
-        shadeIntensity: 1,
-        inverseColors: false,
-        opacityFrom: 0.5,
-        opacityTo: 0,
-        stops: [0, 90, 100]
+      dataLabels: {
+        enabled: false,
       },
-    },
-    yaxis: {
-      labels: {
-        formatter: function (val) {
-          return val;
+      markers: {
+        size: 0,
+      },
+      title: {
+        text: titl,
+        align: 'left'
+      },
+      fill: {
+        type: 'gradient',
+        gradient: {
+          shadeIntensity: 1,
+          inverseColors: false,
+          opacityFrom: 0.5,
+          opacityTo: 0,
+          stops: [0, 90, 100]
         },
       },
-      logarithmic: loga,
-      title: {
-        text: 'Price'
+      yaxis: {
+        labels: {
+          formatter: function (val) {
+            return val;
+          },
+        },
+        logarithmic: loga,
+        title: {
+          text: 'Price'
+        },
       },
-    },
-    xaxis: {
-      type: 'datetime',
-    },
-    tooltip: {
-      shared: false,
-      theme: 'dark',
-      fillSeriesColor: true,
-      y: {
-        formatter: function (val) {
-          return val
+      xaxis: {
+        type: 'datetime',
+      },
+      tooltip: {
+        shared: false,
+        theme: 'dark',
+        fillSeriesColor: true,
+        y: {
+          formatter: function (val) {
+            return val
+          }
         }
       }
-    }
-  };
-  var chart = new ApexCharts(document.querySelector("#chart"), options);
-  chart.render();
-
+    };
+    var chart = new ApexCharts(document.querySelector("#chart"), options);
+    chart.render();
+  });
 </script>
 
 </html>
