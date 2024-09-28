@@ -41,15 +41,9 @@
     </header>
     <main class="mb-auto mt-4 pb-4 d-flex justify-content-center">
       <div id="chart"></div>
-      <!--<p><img src="images/FINALCYCLICAL.png" alt="cyclical unemployment rate" height="275" width="500"> </p>
-      <p style="font-size: 60%; padding: 4%;"> This tells us how much of the unemployment rate is due to economic cycles as opposed to natural factors (structural and frictional)
-        giving us a better indicator for tracking what stage of the economic cycle we are in. 
-        Updated: Sept 2024 
-      </p>-->
 
-      <iframe src="https://fred.stlouisfed.org/graph/graph-landing.php?g=1utIS&width=670&height=475" scrolling="no" frameborder="0" style="overflow:hidden; width:670px; height:525px;" allowTransparency="true" loading="lazy"></iframe>
     </main>
-
+    <div id="crack"></div>
 
     <footer class="text-white-50 text-center">
       <p><b>&copy; 2024 Will Infante. All Rights Reserved.</b></p>
@@ -135,6 +129,83 @@
       }
     };
     var chart = new ApexCharts(document.querySelector("#chart"), options);
+    chart.render();
+  });
+
+  d3.csv("/data/HTRUCKSS.csv", function (data_s) {
+    //var max = new Date().getTime() // Current timestamp
+    //var min = new Date("2019-09-16").getTime() // timestamp 90 days before
+
+    //var range = max - min
+    console.log(data_s);
+
+    console.log(data_s[0])
+    var options = {
+      series: [{
+        name: 'Heavy Truck Sales',
+        data: data_s.map(item => {
+          return [item.DATE, item.SALES]
+        })
+      }],
+      chart: {
+        type: 'area',
+        foreColor: "#000000",
+        background: '#FFFFFF',
+        colors: ["#156082"],
+        stacked: false,
+        height: 400,
+        width: 800,
+        zoom: {
+          type: 'x',
+          enabled: true,
+          autoScaleYaxis: true
+        },
+        toolbar: {
+          autoSelected: 'zoom'
+        }
+      },
+
+      dataLabels: {
+        enabled: false,
+      },
+      markers: {
+        size: 0,
+      },
+      title: {
+        text: 'Heavy Truck Sales (mm units)',
+        align: 'left'
+      },
+      fill: {
+        type: 'solid',
+        colors: ['transparent']
+      },
+      yaxis: {
+        labels: {
+          formatter: function (val) {
+            return val;
+          },
+        },
+        logarithmic: false,
+        title: {
+          text: 'Price'
+        },
+      },
+      xaxis: {
+        type: 'datetime'
+       // range: range
+      },
+      tooltip: {
+        shared: false,
+        theme: 'light',
+        fillSeriesColor: true,
+        y: {
+          formatter: function (val) {
+            return val
+          }
+        }
+      }
+    };
+    var chart = new ApexCharts(document.querySelector("#crack"), options);
     chart.render();
   });
 </script>
