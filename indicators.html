@@ -59,10 +59,10 @@
 
 
   d3.csv("/data/HTRUCKSS.csv", function (data_s) {
-    var max = new Date().getTime() // Current timestamp
-    var min = new Date("2019-09-16").getTime() // timestamp 90 days before
+    //var max = new Date().getTime() // Current timestamp
+    //var min = new Date("2019-09-16").getTime() // timestamp 90 days before
 
-    var range = max - min
+    //var range = max - min
     console.log(data_s);
 
     console.log(data_s[0])
@@ -116,8 +116,8 @@
         },
       },
       xaxis: {
-        type: 'datetime',
-        range: range
+        type: 'datetime'
+       // range: range
       },
       tooltip: {
         shared: false,
