@@ -63,13 +63,15 @@
     console.log(data_s[0])
     var options = {
       series: [{
-        name: 'XYZ MOTORS',
-        data: data_s
+        name: 'Heavy Truck Sales',
+        data: data_s.map(item => {
+          return [item.DATE, item.SALES]
+        })
       }],
       chart: {
         type: 'area',
-        foreColor: "#FFFFFF",
-
+        foreColor: "#000000",
+        background: '#FFFFFF',
         stacked: false,
         height: 650,
         width: 1590,
