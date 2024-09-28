@@ -132,7 +132,7 @@
     chart.render();
   });
 
-  d3.csv("/data/HTRUCKSS.csv", function (data_s) {
+  d3.csv("/data/HOCRACK.csv", function (data_s) {
     //var max = new Date().getTime() // Current timestamp
     //var min = new Date("2019-09-16").getTime() // timestamp 90 days before
 
@@ -142,9 +142,9 @@
     console.log(data_s[0])
     var options = {
       series: [{
-        name: 'Heavy Truck Sales',
+        name: 'HO-WTI Crack ($/bbl)',
         data: data_s.map(item => {
-          return [item.DATE, item.SALES]
+          return [item.DATE, item.CRACK]
         })
       }],
       chart: {
