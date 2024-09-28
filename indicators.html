@@ -45,6 +45,7 @@
     </main>--->
     <div id="chart"></div>
     <div id="crack"></div>
+    <div id="unempl"></div>
 
     <footer class="text-white-50 text-center">
       <p><b>&copy; 2024 Will Infante. All Rights Reserved.</b></p>
@@ -209,7 +210,79 @@
     chart.render();
   });
 
+  d3.csv("/data/CYC.csv", function (data_s) {
 
+    console.log(data_s);
+
+    var options = {
+      series: [{
+        name: 'Cyclical Rate of Unemployment for USA (%)',
+        data: data_s.map(item => {
+          return [item.DATE, item.CRACK]
+        })
+      }],
+      chart: {
+        type: 'area',
+        foreColor: "#000000",
+        background: '#FFFFFF',
+        stacked: false,
+        height: 400,
+        width: 800,
+        zoom: {
+          type: 'x',
+          enabled: true,
+          autoScaleYaxis: true
+        },
+        toolbar: {
+          autoSelected: 'zoom'
+        }
+      },
+
+      dataLabels: {
+        enabled: false,
+      },
+      markers: {
+        size: 0,
+      },
+      title: {
+        text: ' Cyclical Rate of Unemployment for USA (%)',
+        align: 'left'
+      },
+      fill: {
+        type: 'solid',
+        colors: ['transparent']
+      },
+      yaxis: {
+        labels: {
+          formatter: function (val) {
+            return val;
+          },
+        },
+        logarithmic: false,
+        title: {
+          text: 'Price'
+        },
+      },
+      xaxis: {
+        type: 'datetime',
+        range: range_1
+      },
+      tooltip: {
+        shared: false,
+        theme: 'light',
+        fillSeriesColor: true,
+        y: {
+          formatter: function (val) {
+            return val
+          }
+        }
+      }
+    };
+    var chart_3 = new ApexCharts(document.querySelector("#unempl"), options);
+    chart_3.render();
+  });
+
+  //
 </script>
 
 </html>
