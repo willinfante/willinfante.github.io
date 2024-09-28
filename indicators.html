@@ -43,17 +43,29 @@
       
 
     </main>--->
-    <main class="mb-auto mt-4 pb-4">
+    <main class="mb-auto mt-4 pb-4" style="display: flex">
 
       <div id="chart"></div>
-      <p>Heavy truck sales have remained stable.. eoifseoifjesojfesoijfes
+      <p style="padding: 3%;">Heavy truck sales have remained stable.. eoifseoifjesojfesoijfes
         esofjesofijesofjesofiesjfiesjfoesjfoesijfoesjfief
 
         efoesjfiesofjoiesjfoesfjesifjesfoisejfoesjf
       </p>
     </main>
-    <div id="crack"></div>
-    <div id="unempl"></div>
+
+    <main class="mb-auto mt-4 pb-4" style="display: flex">
+      <div id="crack"></div>
+      <p style="padding: 3%;"> 
+      </p>
+    </main>
+
+    <main class="mb-auto mt-4 pb-4" style="display: flex">
+      <div id="unempl"></div>
+      <p style="padding: 3%;">The cyclical unemployment rate, or unemployment only due to economic cycles,
+        has been negative since October 2021, and has been inching upwards as labor market conditions have 
+        been lightly deteriorating.
+      </p>
+    </main>
 
     <footer class="text-white-50 text-center">
       <p><b>&copy; 2024 Will Infante. All Rights Reserved.</b></p>
@@ -75,7 +87,7 @@
 
   var range_1 = max - min
 
-  var max = new Date("2024-03-01").getTime()
+  var max = new Date("2024-08-01").getTime()
   var min = new Date("2019-01-01").getTime() // timestamp 90 days before
 
   var range_uneml = max - min
@@ -95,7 +107,7 @@
         foreColor: "#000000",
         background: '#FFFFFF',
         stacked: false,
-        
+
         height: 400,
         width: 600,
         zoom: {
@@ -107,7 +119,7 @@
           autoSelected: 'zoom'
         }
       },
-      stroke : { colors : ["#354BA0"] },
+      stroke: { colors: ["#354BA0"] },
       dataLabels: {
         enabled: false,
       },
@@ -166,7 +178,7 @@
         background: '#FFFFFF',
         stacked: false,
         height: 400,
-        width: 800,
+        width: 600,
         zoom: {
           type: 'x',
           enabled: false,
@@ -176,7 +188,7 @@
           autoSelected: 'zoom'
         }
       },
-      stroke : { colors : ["#C22721"] },
+      stroke: { colors: ["#C22721"] },
       dataLabels: {
         enabled: false,
       },
@@ -235,7 +247,7 @@
         background: '#FFFFFF',
         stacked: false,
         height: 400,
-        width: 800,
+        width: 600,
         zoom: {
           type: 'x',
           enabled: false,
@@ -271,7 +283,7 @@
           text: 'Price'
         },
       },
-      stroke : { colors : ["#354BA0"] },
+      stroke: { colors: ["#354BA0"] },
       xaxis: {
         type: 'datetime',
         range: range_uneml
